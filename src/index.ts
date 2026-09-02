@@ -16,7 +16,7 @@ import { auth } from "./lib/auth.js";
 import { env } from "./lib/env.js";
 import { productRoutes } from "./routes/product.js";
 
-const envToLogger = {
+/* const envToLogger = {
   development: {
     transport: {
       target: "pino-pretty",
@@ -28,10 +28,11 @@ const envToLogger = {
   },
   production: true,
   test: false,
-};
+}; */
 
 const app = Fastify({
-  logger: envToLogger[env.NODE_ENV],
+  /* logger: envToLogger[env.NODE_ENV], */
+  logger: true,
 });
 
 app.setValidatorCompiler(validatorCompiler);
