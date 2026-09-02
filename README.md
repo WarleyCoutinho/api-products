@@ -30,7 +30,7 @@ pnpm exec prisma generate
 pnpm dev
 ```
 
-API em `http://localhost:8080`, docs em `http://localhost:8080/docs`.
+API em `http://localhost:3378`, docs em `http://localhost:3378/docs`.
 
 ---
 

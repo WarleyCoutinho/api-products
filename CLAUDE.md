@@ -39,7 +39,7 @@ Build: `pnpm build` (roda `prisma generate && tsc`, compila para `./dist`). Nao 
 
 ### Autenticacao
 
-Better-Auth com adaptador Prisma (`src/lib/auth.ts`). Rotas de auth em `/api/auth/*`. Autenticacao baseada em sessao — rotas extraem a sessao do usuario via `auth.api.getSession()`.
+Better-Auth com adaptador Prisma (`src/lib/auth.ts`). Rotas de auth em `/api/auth/*`. Autenticacao baseada em sessao — rotas extraem a sessao do usuario via `auth.api.getSession()`. Dois metodos de login: Google OAuth e e-mail/senha (`emailAndPassword`, com `requireEmailVerification: true` — cadastro por e-mail exige verificar o link antes de poder logar). `sendVerificationEmail` so loga a URL no console por enquanto (`TODO` no codigo) — precisa de um provedor de e-mail real (Resend, SES, etc.) antes de produção.
 
 ### Banco de Dados
 
