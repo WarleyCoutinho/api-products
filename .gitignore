@@ -1,0 +1,11 @@
+node_modules
+/src/generated/prisma
+.env
+
+# Build
+dist
+
+# Editor / tooling local
+.vscode
+.serena
+.DS_Store
